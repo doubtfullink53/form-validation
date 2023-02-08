@@ -1,8 +1,15 @@
 #togglePassword, #togglePasswordConfirmation {
-    position: absolute;
+
+    position: absolute; 
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    cursor: pointer;
+     cursor: pointer;
+     
   }
 
+  .form-floating small {
+    height: 5px; /* set a fixed height */
+    display: block; /* display the element as a block */
+    margin-bottom: 40px; /* add a margin-top of 10px */
+  }

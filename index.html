@@ -12,11 +12,13 @@
 
 </head>
 <body>
-    <div class="container px-5 my-5">
+    <div class="container px-5 my-5 col-lg-4">
         <form id="signup" >
+            <h1 class="text-center pb-2">Sign Up</h1>
             <div class="form-floating mb-3 ">
                 <input class="form-control  " id="email" type="email" name="email" placeholder="Email Address" autocomplete="off" />
                 <label for="emailAddress">Email Address</label>
+                <small ></small>
             </div>
             <div class="form-floating mb-3">
                 <select class="form-select" id="country" aria-label="Country">
@@ -367,7 +369,7 @@
                     <option value="Ukraine">Ukraine</option>
                     <option value="United Arab Emirates">United Arab Emirates</option>
                     <option value="United Kingdom">United Kingdom</option>
-                    <option value="United States">United States</option>
+                    <option value="United States" selected="selected">United States</option>
                     <option value="Uruguay">Uruguay</option>
                     <option value="Uzbekistan">Uzbekistan</option>
                     <option value="Vanuatu">Vanuatu</option>
@@ -379,33 +381,37 @@
                     <option value="Zimbabwe">Zimbabwe</option>
                 </select>
                 <label for="country">Country</label>
+                <small></small>
             </div>
             <div class="form-floating mb-3">
-                <input class="form-control" id="zip" type="text" placeholder="Zip Code" />
+                <input class="form-control" id="zip" type="text" placeholder="Zip Code" autocomplete="zip" />
                 <label for="zipCode">Zip Code</label>
-           
+                <small ></small>
 
             </div>
             
             <div class="form-floating mb-3">
-                <input class="form-control" id="password" type="password" placeholder="Password">
+                <input class="form-control" id="password" type="password" placeholder="Password" autocomplete="new-password">
                 <label for="password">Password</label>
+                
                 <i class="fa fa-eye-slash" id="togglePassword"></i>
+                <small ></small>
               </div>
-          
-            
-            <div class="form-floating mb-3">
-                <input class="form-control" id="passwordConfirmation" type="text" placeholder="Password Confirmation"  />
+              
+             
+            <div class="form-floating mb-4">
+                <input class="form-control" id="confirm-password" type="password" placeholder="Password Confirmation" autocomplete="new-password" />
                 <label for="passwordConfirmation">Password Confirmation</label>
-                <i class="fa fa-eye-slash" id="togglePasswordConfirmation"></i>
-                <div class="invalid-feedback" >Password Confirmation is required.</div>
+                <i class="fa fa-eye-slash " id="togglePasswordConfirmation" ></i>
+                <small ></small>
             </div>
+            <small class="mb-3"></small>
             <div class="d-none" id="submitSuccessMessage">
                 <div class="text-center mb-3">
                     <div class="fw-bolder">Form submission successful!</div>
                 </div>
             </div>
-            <div class="d-grid">
+            <div class="d-grid mt-3">
                 <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
             </div>
         </form>
